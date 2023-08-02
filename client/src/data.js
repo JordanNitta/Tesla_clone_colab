@@ -146,3 +146,49 @@ export const solarRoofLink = [
         path: "/energy/design"
     }
 ]
+
+// Shop Links
+export const shopLinks = [
+    {
+        id: 1,
+        title: 'Charging',
+        path:"/category/charging",
+    },
+    {
+        id: 2,
+        title: 'Vehicle Accessories',
+        path:"/category/vehicle-accessories",
+    },
+    {
+        id: 3,
+        title: 'Apparel',
+        path:'/category/apparel',
+    },
+    {
+        id: 4,
+        title: 'Lifestyle',
+        path:"/category/lifestyle",
+    },
+]
+
+// Shop icons for shop nav bar
+export const shopIcons = [
+    {
+        title: "Shop",
+        path:"/account",
+        list: "",
+    },
+    {
+        title: "Account",
+        path:"/account",
+        list: "",
+    },
+    {
+        title: "Menu",
+        path:"/menu",
+        list: [
+            {}
+        ],
+    },
+    
+]

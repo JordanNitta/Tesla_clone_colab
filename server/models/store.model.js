@@ -28,9 +28,10 @@ const StoreSchema = new mongoose.Schema({
         }
     },
 
-    lifestyle: [
+    lifestyle: {
 
-    ]
+    }
+
 })
 
 const Store = mongoose.model('Store', StoreSchema)

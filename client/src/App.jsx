@@ -9,6 +9,7 @@ import SolarPlanel from "./pages/solarPlanel/SolarPlanel";
 import SolarRoof from "./pages/solarRoof/SolarRoof";
 import Navbar from "./components/Navbar";
 import Register from "./pages/createAccount/Register";
+import Shop from "./pages/ShopPage/Shop"
 // import Navbar from "./components/Navbar";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='solarpanel' element={<SolarPlanel/>}/>
         <Route path='solarroof' element={<SolarRoof/>}/>
         <Route path='account' element={<Register />}/>
+        <Route path='shop' element={<Shop />} />
         <Route path='*' element={<NotFound/>}/>
       </Routes>
     </BrowserRouter>

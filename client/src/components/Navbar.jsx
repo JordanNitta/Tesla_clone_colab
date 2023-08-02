@@ -39,7 +39,9 @@ const Navbar = () => {
             </div>
             <div className='hidden lg:inline'>
                 <ul className='flex justify-center hover:cursor-pointer'>
-                    <li className='py-1 px-3 hover:rounded hover:bg-black/5'>Shop</li>
+                    <Link to='/shop'>
+                        <li className='py-1 px-3 hover:rounded hover:bg-black/5'>Shop</li>
+                    </Link>
                     <li className='py-1 px-3 hover:rounded hover:bg-black/5'>Account</li>
                     <li className='py-1 px-3 hover:rounded hover:bg-black/5'>Menu</li>
                 </ul>
