@@ -1,8 +1,25 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { shopLinks } from '../../data'
 const ShopNavbar = () => {
-    
+    const [show, setShow] = useState(false)
+
+    const controlNav = () => {
+        if (window.scrollY > 200) {
+            setShow(true)
+        } else {
+            setShow(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', controlNav)
+        return (() => {
+            window.addEventListener('scroll', controlNav)
+        })
+    }, [])
+
     return (
         <div className='flex justify-between items-center px-12 p-4 text-sm font-bold top-0 z-20 fixed w-full' >
             <div className='flex items-center'>

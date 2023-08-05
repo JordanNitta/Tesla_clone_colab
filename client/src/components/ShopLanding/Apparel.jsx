@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+
 import MensMobile from '../../images/shopImages/men_mobile.avif'
 import MensDesktop from '../../images/shopImages/men_web.avif'
 
@@ -75,7 +76,6 @@ const Apparel = () => {
                                     <h1 className='text-4xl text-center font-bold w-96 mt-2 h-10 text-black top-[20%] p-2 text-[22px]'>{title}</h1>
                                     <PrimaryButton>
                                         <Link to={path}>{btn}</Link>
-                                        {btn}
                                     </PrimaryButton>
                                 </div>
                             </div>
@@ -83,7 +83,8 @@ const Apparel = () => {
                     })
                 }
             </div>
-            <div className='hidden sm:grid grid-cols-3 gap-5'>
+            {/* Small devices and up */}
+            <div className='hidden sm:grid grid-cols-3 gap-2 h-screen'>
                 {
                     apparelData.map(({ title, desktopImg, btn, path }, id) => {
                         return (
@@ -100,7 +101,7 @@ const Apparel = () => {
                             <div className='flex flex-col items-center gap-5 justify-end text-sm relative mb-10'>
                                 <h1 className='text-4xl text-center font-bold w-96 mt-2 h-10 text-black top-[20%] p-2 text-[22px]'>{title}</h1>
                                 <PrimaryButton>
-                                    <Link to={path}>{btn}
+                                    <Link to={path}>
                                         {btn}
                                     </Link>
                                 </PrimaryButton>
